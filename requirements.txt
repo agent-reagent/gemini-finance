@@ -1,0 +1,9 @@
+streamlit
+transformers
+google-generativeai
+yfinance
+matplotlib
+pandas
+beautifulsoup4
+requests
+python-dotenv
