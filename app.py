@@ -23,7 +23,6 @@ pipe = pipeline(
     "text-classification",
     model="mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis",
 )
-API_KEY = "AIzaSyDnRd4-UvV4U9oYcZfLXRT224pnU0KwEao"
 model = genai.GenerativeModel("gemini-1.5-flash")
 genai.configure(api_key=API_KEY)
 fig = plt.figure(figsize=(4, 4))
@@ -77,3 +76,4 @@ st.write("% Change")
 fig2 = func.plot_column(history, "Volume")
 st.line_chart(history["Close"].pct_change())
 st.pyplot(fig2)
+
